@@ -1,8 +1,16 @@
 package priv.fffzlfk.generics;
 
 public class Pair<T> {
-    private final T first;
-    private final T last;
+    private T first;
+    private T last;
+
+    public void setFirst(T first) {
+        this.first = first;
+    }
+
+    public void setLast(T last) {
+        this.last = last;
+    }
 
     public Pair(T first, T last) {
         this.first = first;
